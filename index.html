@@ -118,7 +118,7 @@
 
             const headers = {
                 "Content-Type": "application/json",
-                "Apikey": Api-Key ${API_KEY}
+                "Apikey": `Api-Key ${API_KEY}`
             };
 
             const payloadInput = document.getElementById("payloadInput");
@@ -155,7 +155,7 @@
         function displayMessage(message, className) {
             const chatBox = document.getElementById("chatBox");
             const messageElement = document.createElement("div");
-            messageElement.className = message ${className};
+            messageElement.className = `message ${className}`;
             messageElement.innerText = message;
             chatBox.appendChild(messageElement);
             chatBox.scrollTop = chatBox.scrollHeight; // Scroll to the bottom
